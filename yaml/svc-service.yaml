@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: msvc
+  labels:
+    app: msvc
+spec:
+  selector:
+    app: msvc
+  ports:
+    - name: http-port
+      port: 9090
+      targetPort: 9090
+      protocol: TCP
+
